@@ -20,7 +20,7 @@
     --accent:#5a4bd1; --accent-2:#7b6cf0;
     --jlc-blue:#2443d6; --jlc-red:#d7262e;
     --card:#ffffff; --line:#e7e3f3;
-    --radius:20px; --pad:clamp(18px,5vw,48px);
+    --radius:8px; --pad:clamp(18px,5vw,48px);
     --shadow:0 1px 2px rgba(40,30,90,.04),0 8px 28px rgba(60,40,140,.07);
   }
   *{box-sizing:border-box}
@@ -46,7 +46,7 @@
   .nav{position:sticky;top:0;z-index:20;backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);background:rgba(243,239,253,.78);border-bottom:1px solid rgba(90,75,209,.08)}
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
   .nav img{height:34px;width:auto}
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:12px 22px;font-size:15px;border:0;cursor:pointer;transition:transform .15s,background .15s}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border-radius:6px;padding:12px 22px;font-size:15px;border:0;cursor:pointer;transition:transform .15s,background .15s}
   .btn:hover{background:#4a3cc0}.btn:active{transform:scale(.97)}
   .btn.sm{padding:9px 16px;font-size:14px}
   .btn.ghost{background:#fff;color:var(--accent);box-shadow:inset 0 0 0 1.5px var(--accent)}
@@ -72,7 +72,7 @@
   .check{display:flex;gap:14px;align-items:center;padding:18px 20px;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;transition:box-shadow .2s,transform .1s;border:1.5px solid transparent;font-weight:600;font-size:15.5px;line-height:1.35}
   .check:active{transform:scale(.985)}
   .check input{position:absolute;opacity:0;pointer-events:none}
-  .box{flex:none;width:26px;height:26px;border-radius:8px;border:2px solid #c8c2e6;display:grid;place-items:center;transition:.15s}
+  .box{flex:none;width:26px;height:26px;border-radius:4px;border:2px solid #c8c2e6;display:grid;place-items:center;transition:.15s}
   .box svg{opacity:0;transition:.15s}
   .check:has(input:checked){border-color:var(--accent);box-shadow:0 8px 24px rgba(90,75,209,.16)}
   .check input:checked + .box{background:var(--accent);border-color:var(--accent)}
@@ -96,7 +96,7 @@
 
   /* risks */
   .risk{display:flex;gap:16px;align-items:center;padding:14px}
-  .risk img{width:clamp(96px,26vw,150px);aspect-ratio:1;object-fit:cover;border-radius:14px;flex:none}
+  .risk img{width:clamp(96px,26vw,150px);aspect-ratio:1;object-fit:cover;border-radius:6px;flex:none}
   .risk p{margin:0;font-size:16px;color:var(--muted)}
   .risk b{color:var(--ink)}
 
@@ -107,8 +107,8 @@
   .dir li{font-size:17px;color:var(--muted);padding-left:22px;position:relative}
   .dir li:before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:50%;background:var(--jlc-red)}
   figure{margin:0;position:relative}
-  figure img{border-radius:16px;width:100%}
-  .tag{position:absolute;top:12px;left:12px;background:rgba(23,22,43,.75);color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
+  figure img{border-radius:6px;width:100%}
+  .tag{position:absolute;top:12px;left:12px;background:rgba(23,22,43,.75);color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:4px}
   .tag.new{background:var(--jlc-red)}
 
   .banner{padding:0;overflow:hidden;background:#fff}
@@ -156,11 +156,11 @@
   .case .head h3{font-size:clamp(20px,3vw,28px)}
   .case .task{color:var(--muted);font-size:16px;margin:0 0 18px}
   .case .task b{color:var(--ink)}
-  .kpi{display:flex;gap:16px;align-items:center;background:#f4f1ff;border-radius:16px;padding:16px 20px;margin-bottom:18px}
+  .kpi{display:flex;gap:16px;align-items:center;background:#f4f1ff;border-radius:6px;padding:16px 20px;margin-bottom:18px}
   .kpi .big{font-size:clamp(36px,6vw,52px);font-weight:800;color:var(--accent);line-height:1}
   .kpi span{color:var(--muted);font-size:15px}
   .gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
-  .gallery img{width:100%;height:100%;object-fit:cover;border-radius:14px;background:#f4f1ff}
+  .gallery img{width:100%;height:100%;object-fit:cover;border-radius:6px;background:#f4f1ff}
   .gallery .wide{grid-column:1/-1}
   .gallery .contain{object-fit:contain}
   @media(min-width:860px){.gallery.c3{grid-template-columns:repeat(3,1fr)}}
@@ -168,17 +168,17 @@
 
   .duo{grid-template-columns:1fr}
   @media(min-width:860px){.duo{grid-template-columns:1fr 1.5fr}}
-  .bottles{display:flex;justify-content:center;align-items:flex-end;gap:6%;padding:24px;border-radius:14px}
+  .bottles{display:flex;justify-content:center;align-items:flex-end;gap:6%;padding:24px;border-radius:6px}
   .bottles img{height:clamp(260px,60vw,420px);width:auto;object-fit:contain;background:none;border-radius:0;filter:drop-shadow(0 16px 20px rgba(0,0,0,.15))}
   @media(min-width:860px){.case .gallery:not(.duo){grid-template-columns:repeat(2,1fr)}.case .gallery .wide{grid-column:auto}.case .gallery img{max-height:520px}}
   /* cta */
   .cta{display:grid;gap:22px;align-items:center}
   @media(min-width:860px){.cta{grid-template-columns:1.2fr 1fr}}
-  .cta img{border-radius:20px}
-  .cta .res{padding:28px}
+  .cta img{border-radius:8px}
+  .cta .res{padding:28px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;align-self:stretch}
   .cta .res h3{color:var(--accent);font-size:clamp(24px,3.4vw,32px);margin-bottom:16px}
   .cta .res p{margin:0 0 12px;font-weight:600;font-size:17px}
-  .contacts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .contacts{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:20px}
   footer{padding:34px 0 calc(34px + env(safe-area-inset-bottom));color:var(--soft);font-size:13px;text-align:center}
 
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
@@ -191,7 +191,7 @@
 <header class="nav">
   <div class="wrap">
     <img src="img/logo.webp" alt="JLC" width="1000" height="667">
-    <a class="btn sm" href="#meeting">Обсудить</a>
+    <a class="btn sm" href="https://wa.me/79655423827" target="_blank" rel="noopener">WhatsApp</a>
   </div>
 </header>
 
@@ -445,7 +445,6 @@
   if (CONTACTS.phone) links.push(`<a class="btn ghost" href="tel:${CONTACTS.phone.replace(/[^+\d]/g,"")}">${CONTACTS.phone}</a>`);
   if (CONTACTS.email) links.push(`<a class="btn ghost" href="mailto:${CONTACTS.email}">${CONTACTS.email}</a>`);
   c.innerHTML = links.join("");
-  if (!links.length) document.querySelector(".nav .btn").textContent = "Встреча";
 
   if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), {rootMargin:"0px 0px -8% 0px"});
