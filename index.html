@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Может ли ваш бренд приносить больше прибыли? · Экспертный разбор для JLC</title>
+<meta name="description" content="Экспертный разбор для JLC: конкуренты, риски, возможности визуального развития и кейсы. Анна Трошина — эксперт по визуальной стратегии брендов FMCG и дизайну упаковки.">
+<meta name="theme-color" content="#f1ecfd">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Может ли ваш бренд приносить больше прибыли?">
+<meta property="og:description" content="Экспертный разбор для JLC · Анна Трошина">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="img/logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#17162b; --muted:#5d5b73; --soft:#8a88a0;
+    --accent:#5a4bd1; --accent-2:#7b6cf0;
+    --jlc-blue:#2443d6; --jlc-red:#d7262e;
+    --card:#ffffff; --line:#e7e3f3;
+    --radius:20px; --pad:clamp(18px,5vw,48px);
+    --shadow:0 1px 2px rgba(40,30,90,.04),0 8px 28px rgba(60,40,140,.07);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.5;
+    background:linear-gradient(180deg,#f3effd 0%,#eef1fe 30%,#f6f1fb 60%,#f1f4fd 100%);background-attachment:fixed}
+  img{display:block;max-width:100%;height:auto}
+  a{color:var(--accent)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 var(--pad)}
+  section{padding:clamp(56px,10vw,110px) 0}
+  h1,h2,h3{margin:0;line-height:1.15;letter-spacing:-.01em}
+  h1{font-size:clamp(34px,7vw,64px);font-weight:700}
+  h2{font-size:clamp(26px,4.6vw,44px);font-weight:700;margin-bottom:clamp(22px,4vw,40px)}
+  h3{font-size:clamp(18px,2.4vw,22px);font-weight:700}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  .lead{color:var(--muted);font-size:clamp(15px,2vw,18px);margin:-18px 0 28px}
+  .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow)}
+  .src{font-size:12px;color:var(--soft);margin-top:auto;padding-top:14px}
+  .grid{display:grid;gap:clamp(14px,2.4vw,24px)}
+  @media(min-width:760px){.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}}
+
+  /* nav */
+  .nav{position:sticky;top:0;z-index:20;backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);background:rgba(243,239,253,.78);border-bottom:1px solid rgba(90,75,209,.08)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+  .nav img{height:34px;width:auto}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:12px 22px;font-size:15px;border:0;cursor:pointer;transition:transform .15s,background .15s}
+  .btn:hover{background:#4a3cc0}.btn:active{transform:scale(.97)}
+  .btn.sm{padding:9px 16px;font-size:14px}
+  .btn.ghost{background:#fff;color:var(--accent);box-shadow:inset 0 0 0 1.5px var(--accent)}
+
+  /* hero */
+  .hero{padding-top:clamp(32px,6vw,72px)}
+  .hero .wrap{display:grid;gap:28px;align-items:center;grid-template-columns:minmax(0,1fr)}
+  .grid>*,.dir>*,.about>*,.cta>*{min-width:0}
+  h1,h2,h3{overflow-wrap:break-word}
+  @media(min-width:860px){.hero .wrap{grid-template-columns:1.15fr .85fr}}
+  .hero .eyebrow{margin:22px 0 32px;display:block}
+  .author{display:flex;gap:16px;align-items:center}
+  .author img{width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:50% 20%}
+  .author small{display:block;color:var(--soft);font-size:13px}
+  .author b{display:block;font-size:17px}
+  .author span{color:var(--muted);font-size:14px;line-height:1.35;display:block;max-width:280px}
+  .hero-pic{width:100%;max-width:min(440px,100%);margin:0 auto;filter:drop-shadow(0 30px 40px rgba(36,67,214,.18))}
+
+  /* checklist */
+  .checks{grid-template-columns:1fr}
+  @media(min-width:600px){.checks{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:960px){.checks{grid-template-columns:repeat(3,1fr)}}
+  .check{display:flex;gap:14px;align-items:center;padding:18px 20px;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;transition:box-shadow .2s,transform .1s;border:1.5px solid transparent;font-weight:600;font-size:15.5px;line-height:1.35}
+  .check:active{transform:scale(.985)}
+  .check input{position:absolute;opacity:0;pointer-events:none}
+  .box{flex:none;width:26px;height:26px;border-radius:8px;border:2px solid #c8c2e6;display:grid;place-items:center;transition:.15s}
+  .box svg{opacity:0;transition:.15s}
+  .check:has(input:checked){border-color:var(--accent);box-shadow:0 8px 24px rgba(90,75,209,.16)}
+  .check input:checked + .box{background:var(--accent);border-color:var(--accent)}
+  .check input:checked + .box svg{opacity:1}
+  .check input:focus-visible + .box{outline:3px solid rgba(90,75,209,.35);outline-offset:2px}
+  .score{margin-top:28px;display:flex;gap:18px;align-items:center;padding:20px 24px}
+  .score .num{font-size:44px;font-weight:800;color:var(--accent);min-width:64px;line-height:1}
+  .score b{display:block;font-size:17px}
+  .score span{color:var(--muted);font-size:15px}
+  .score.hot{background:var(--accent);color:#fff}.score.hot .num,.score.hot span{color:#fff}
+
+  /* stores */
+  .store{display:flex;flex-direction:column;overflow:hidden}
+  @media(min-width:520px){.store{flex-direction:row}}
+  .store img{width:100%;aspect-ratio:16/10;object-fit:cover}
+  @media(min-width:520px){.store img{width:42%;aspect-ratio:auto;min-height:240px}}
+  .store .body{padding:20px 22px;display:flex;flex-direction:column;flex:1}
+  .store h3{margin-bottom:6px}
+  .store .meta{font-size:13px;color:var(--accent);font-weight:600;margin-bottom:6px}
+  .store p{margin:0;color:var(--muted);font-size:15px}
+
+  /* risks */
+  .risk{display:flex;gap:16px;align-items:center;padding:14px}
+  .risk img{width:clamp(96px,26vw,150px);aspect-ratio:1;object-fit:cover;border-radius:14px;flex:none}
+  .risk p{margin:0;font-size:16px;color:var(--muted)}
+  .risk b{color:var(--ink)}
+
+  /* direction */
+  .dir{display:grid;gap:20px}
+  @media(min-width:900px){.dir{grid-template-columns:.8fr 1.6fr;align-items:end}}
+  .dir ul{list-style:none;margin:0 0 20px;padding:24px;display:grid;gap:14px}
+  .dir li{font-size:17px;color:var(--muted);padding-left:22px;position:relative}
+  .dir li:before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:50%;background:var(--jlc-red)}
+  figure{margin:0;position:relative}
+  figure img{border-radius:16px;width:100%}
+  .tag{position:absolute;top:12px;left:12px;background:rgba(23,22,43,.75);color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
+  .tag.new{background:var(--jlc-red)}
+
+  .banner{padding:0;overflow:hidden;background:#fff}
+  .banner .top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:clamp(28px,5vw,56px) var(--pad) 10px;max-width:1180px;margin:0 auto}
+  .banner .top h2{color:var(--jlc-blue);font-size:clamp(17px,2.6vw,26px);text-transform:uppercase;margin:0;max-width:420px}
+  .banner .top img{width:clamp(90px,16vw,170px)}
+  .banner .ill{width:100%;max-width:1600px;margin:0 auto}
+  .values{background:var(--jlc-red);color:#fff;display:grid;grid-template-columns:repeat(2,1fr);text-align:center;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:clamp(12px,2vw,17px)}
+  @media(min-width:700px){.values{grid-template-columns:repeat(4,1fr)}}
+  .values div{padding:16px 8px}
+
+  /* stats */
+  .stat{padding:28px 26px}
+  .stat .big{font-size:clamp(44px,7vw,60px);font-weight:800;color:var(--accent);line-height:1}
+  .stat h3{margin:14px 0 6px}
+  .stat small{color:var(--soft);font-size:13px;display:block;padding-bottom:16px;border-bottom:1px solid var(--line)}
+  .stat p{margin:14px 0 0;color:var(--muted);font-size:15px}
+  .opp{margin-top:30px;padding:24px 26px;border-left:4px solid var(--accent)}
+  .opp p{margin:6px 0 0;font-size:clamp(16px,2.2vw,19px);font-weight:600}
+
+  /* objections */
+  .obj{padding:20px 22px;display:flex;gap:16px}
+  .obj .n{font-weight:800;color:var(--accent);font-size:15px;padding-top:3px}
+  .obj h3{font-size:18px;margin-bottom:4px}
+  .obj p{margin:0;color:var(--muted);font-size:15px}
+
+  /* about */
+  .about{display:grid;gap:20px}
+  @media(min-width:860px){.about{grid-template-columns:340px 1fr}}
+  .about .photo{overflow:hidden}
+  .about .photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%}
+  .about .photo div{padding:18px 22px}
+  .about .photo b{font-size:19px;display:block}
+  .about .photo span{color:var(--muted);font-size:14.5px}
+  .list{padding:26px}
+  .list h3{margin-bottom:14px}
+  .list ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  .list li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+  .list li:before{content:"";flex:none;width:22px;height:22px;margin-top:1px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/14px no-repeat}
+
+  /* cases */
+  .case{padding:clamp(18px,3vw,32px);margin-bottom:clamp(18px,3vw,28px)}
+  .case .head{display:flex;flex-direction:column;gap:6px;margin-bottom:20px}
+  .case .head .eyebrow{font-size:12px}
+  .case .head h3{font-size:clamp(20px,3vw,28px)}
+  .case .task{color:var(--muted);font-size:16px;margin:0 0 18px}
+  .case .task b{color:var(--ink)}
+  .kpi{display:flex;gap:16px;align-items:center;background:#f4f1ff;border-radius:16px;padding:16px 20px;margin-bottom:18px}
+  .kpi .big{font-size:clamp(36px,6vw,52px);font-weight:800;color:var(--accent);line-height:1}
+  .kpi span{color:var(--muted);font-size:15px}
+  .gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+  .gallery img{width:100%;height:100%;object-fit:cover;border-radius:14px;background:#f4f1ff}
+  .gallery .wide{grid-column:1/-1}
+  .gallery .contain{object-fit:contain}
+  @media(min-width:860px){.gallery.c3{grid-template-columns:repeat(3,1fr)}}
+  .pink{background:linear-gradient(160deg,#fde3ef,#fbd5e6)}
+
+  .duo{grid-template-columns:1fr}
+  @media(min-width:860px){.duo{grid-template-columns:1fr 1.5fr}}
+  .bottles{display:flex;justify-content:center;align-items:flex-end;gap:6%;padding:24px;border-radius:14px}
+  .bottles img{height:clamp(260px,60vw,420px);width:auto;object-fit:contain;background:none;border-radius:0;filter:drop-shadow(0 16px 20px rgba(0,0,0,.15))}
+  @media(min-width:860px){.case .gallery:not(.duo){grid-template-columns:repeat(2,1fr)}.case .gallery .wide{grid-column:auto}.case .gallery img{max-height:520px}}
+  /* cta */
+  .cta{display:grid;gap:22px;align-items:center}
+  @media(min-width:860px){.cta{grid-template-columns:1.2fr 1fr}}
+  .cta img{border-radius:20px}
+  .cta .res{padding:28px}
+  .cta .res h3{color:var(--accent);font-size:clamp(24px,3.4vw,32px);margin-bottom:16px}
+  .cta .res p{margin:0 0 12px;font-weight:600;font-size:17px}
+  .contacts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  footer{padding:34px 0 calc(34px + env(safe-area-inset-bottom));color:var(--soft);font-size:13px;text-align:center}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <img src="img/logo.webp" alt="JLC" width="1000" height="667">
+    <a class="btn sm" href="#meeting">Обсудить</a>
+  </div>
+</header>
+
+<main>
+<!-- 01 -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Может ли ваш бренд приносить больше прибыли?</h1>
+      <span class="eyebrow">Экспертный разбор</span>
+      <div class="author">
+        <img src="img/anna.webp" alt="Анна Трошина" width="799" height="1000">
+        <div>
+          <small>Подготовила:</small>
+          <b>Анна Трошина</b>
+          <span>Эксперт по визуальной стратегии брендов FMCG и дизайну упаковки</span>
+        </div>
+      </div>
+    </div>
+    <img class="hero-pic" src="img/packs.webp" alt="Молоко JLC 2,5% и 3,2%" width="951" height="1394" fetchpriority="high">
+  </div>
+</section>
+
+<!-- 02 -->
+<section id="check">
+  <div class="wrap">
+    <h2>Что может мешать вашему бизнесу расти?</h2>
+    <p class="lead"><b class="eyebrow">Чек-лист</b> · Отметьте утверждения, которые верны для вашей компании.</p>
+    <div class="grid checks" id="checks"></div>
+    <div class="card score" id="score">
+      <div class="num" id="count">0</div>
+      <div><b id="scoreTitle">Три и более — повод провести диагностику</b><span>выяснить причины и определить, какие изменения нужны бизнесу</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section>
+  <div class="wrap">
+    <h2>Конкуренты меняют магазин у дома</h2>
+    <div class="grid g2">
+      <article class="card store reveal"><img src="img/magnum.webp" alt="Magnum Local" loading="lazy" width="1120" height="630"><div class="body"><h3>Magnum Local</h3><p>Фасад, айдентика и навигация связаны в единую систему. В концепции есть кафе, зоны отдыха и упаковка собственной марки.</p><div class="src">Fingers · fingers.kz/work/magnum-local</div></div></article>
+      <article class="card store reveal"><img src="img/small.webp" alt="SMALL" loading="lazy" width="1024" height="576"><div class="body"><h3>SMALL</h3><p>Повседневные продукты, собственная выпечка и готовые блюда. Акции и доставка через партнёров.</p><div class="src">SMALL · small.kz; фото Retail.ru</div></div></article>
+      <article class="card store reveal"><img src="img/toimart.webp" alt="Toimart" loading="lazy" width="419" height="315"><div class="body"><h3>Toimart</h3><p>Разные торговые форматы, включая магазины у дома. Кофе и горячая выпечка есть в отдельных точках, в том числе в Талдыкоргане.</p><div class="src">Toimart · о компании; новость 24.02.2026</div></div></article>
+      <article class="card store reveal"><img src="img/moymarket.webp" alt="«Мой Маркет»" loading="lazy" width="1200" height="675"><div class="body"><h3>«Мой Маркет»</h3><p>Современный магазин у дома. В опубликованной концепции: еда собственного приготовления, кофе и комфортное пространство.</p><div class="src">Tengrinews / Nur.kz · материалы февраля 2026</div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 04 -->
+<section>
+  <div class="wrap">
+    <h2>Новые форматы для нового поколения</h2>
+    <div class="grid g2">
+      <article class="card store reveal"><img src="img/cu.webp" alt="CU" loading="lazy" width="1200" height="800"><div class="body"><h3>CU</h3><div class="meta">Алматы · 52 магазина по данным за 2025 год</div><p>Магазин и перекус в одном формате. Корейские продукты, собственная еда и возможность встретиться с друзьями.</p><div class="src">Shin-Line · shin-line.com/en/magaziny-cu/</div></div></article>
+      <article class="card store reveal"><img src="img/spar.webp" alt="SPAR" loading="lazy" width="800" height="420"><div class="body"><h3>SPAR</h3><p>Повседневные продукты, молочка, готовые блюда и кофе. В новом магазине предусмотрены места для еды.</p><div class="src">SPAR International · открытие 04.06.2026</div></div></article>
+      <article class="card store reveal"><img src="img/compass.webp" alt="Compass Express Market" loading="lazy" width="500" height="375"><div class="body"><h3>Compass Express Market</h3><div class="meta">Городские точки и магазины при АЗС</div><p>Продукты повседневного спроса совмещаются с кафе и покупками в пути. Удобство, парковка и навигация входят в предложение сети.</p><div class="src">Compass · compass.express/ru/page/store</div></div></article>
+      <article class="card store reveal"><img src="img/dina.webp" alt="Dina" loading="lazy" width="500" height="375"><div class="body"><h3>Dina</h3><p>Компания заявляет 40+ магазинов формата у дома в западном регионе. Развивает приложение с доставкой и бонусами в Актобе.</p><div class="src">Dina · dinamarket.kz; фото Яндекс Карты</div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 05 -->
+<section>
+  <div class="wrap">
+    <h2>Выводы: где бизнес рискует терять деньги</h2>
+    <div class="grid g2">
+      <div class="card risk reveal"><img src="img/risk-traffic.webp" alt="" loading="lazy" width="1000" height="563"><p><b>Потеря трафика:</b> современный образ и новые форматы помогают конкурентам привлекать молодую аудиторию</p></div>
+      <div class="card risk reveal"><img src="img/risk-future.webp" alt="" loading="lazy" width="1000" height="1000"><p><b>Будущая выручка:</b> новые покупатели привыкают к другой сети</p></div>
+      <div class="card risk reveal"><img src="img/risk-basket.webp" alt="" loading="lazy" width="1000" height="1000"><p><b>Вся корзина:</b> заодно покупает там молоко и остальные продукты</p></div>
+      <div class="card risk reveal"><img src="img/risk-margin.webp" alt="" loading="lazy" width="1000" height="1000"><p><b>Маржа:</b> если отличия непонятны, удерживать приходится скидками</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section>
+  <div class="wrap">
+    <h2 style="color:var(--jlc-blue)">Возможности визуального развития. Казахский характер в современном прочтении</h2>
+    <div class="dir">
+      <div>
+        <ul class="card">
+          <li>Сохранить аутентичность. Подчеркнуть происхождение и связь с Жетысу</li>
+          <li>Создать образ местного бренда, которым хочется гордиться</li>
+        </ul>
+        <figure class="reveal"><img src="img/store-before.webp" alt="Магазин JLC сейчас" loading="lazy" width="500" height="281"><span class="tag">Сейчас</span></figure>
+      </div>
+      <figure class="reveal"><img src="img/store-after.webp" alt="Магазин JLC: новое направление" loading="lazy" width="1600" height="900"><span class="tag new">Направление</span></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="banner">
+  <div class="top">
+    <h2>Это только одно из возможных направлений визуального развития</h2>
+    <img src="img/logo.webp" alt="JLC" loading="lazy" width="1000" height="667">
+  </div>
+  <img class="ill" src="img/illustration.webp" alt="Иллюстрация: молодые люди на фоне гор с кофе и выпечкой" loading="lazy" width="1600" height="659">
+  <div class="values"><div>Самобытный</div><div>Современный</div><div>Гостеприимный</div><div>Уверенный</div></div>
+</section>
+
+<!-- 08 -->
+<section>
+  <div class="wrap">
+    <h2>Где потенциал будущей выручки?</h2>
+    <div class="grid g3">
+      <div class="card stat reveal"><div class="big">28%</div><h3>молодёжь 14–34 лет</h3><small>Доля населения Казахстана, 2025</small><p>Новая аудитория и её привычки</p></div>
+      <div class="card stat reveal"><div class="big">+13,5%</div><h3>переработка молока</h3><small>Январь–май 2025 к 2024</small><p>Конкуренция за покупателя растёт</p></div>
+      <div class="card stat reveal"><div class="big">+5,4%</div><h3>производство кефира</h3><small>Январь–май 2025 к 2024</small><p>Есть потенциал в категориях</p></div>
+    </div>
+    <div class="card opp"><span class="eyebrow">Возможность для JLC</span><p>Современные форматы, новые поводы для визита и повторных покупок.</p></div>
+  </div>
+</section>
+
+<!-- 09 -->
+<section>
+  <div class="wrap">
+    <h2>Зачем менять то, что работает?</h2>
+    <div class="grid g2">
+      <div class="card obj reveal"><span class="n">01</span><div><h3>У нас и так всё хорошо работает</h3><p>Не факт, что так будет завтра, идёт жёсткая конкурентная борьба</p></div></div>
+      <div class="card obj reveal"><span class="n">02</span><div><h3>Зачем менять оформление?</h3><p>Чтобы оставаться актуальными</p></div></div>
+      <div class="card obj reveal"><span class="n">03</span><div><h3>Это дорого</h3><p>Упущенная выгода и потеря рынка обойдутся дороже. Начнём с одной торговой точки</p></div></div>
+      <div class="card obj reveal"><span class="n">04</span><div><h3>У нас много магазинов</h3><p>Успешный «проект» одного магазина — масштабируем</p></div></div>
+      <div class="card obj reveal"><span class="n">05</span><div><h3>Нас и так знают</h3><p>Но выбирает ли нас молодёжь?</p></div></div>
+      <div class="card obj reveal"><span class="n">06</span><div><h3>Покупатели привыкли</h3><p>Новое поколение выбирает иначе</p></div></div>
+      <div class="card obj reveal"><span class="n">07</span><div><h3>А если продажи упадут?</h3><p>Сначала проверим гипотезы</p></div></div>
+      <div class="card obj reveal"><span class="n">08</span><div><h3>Какую прибыль это принесёт?</h3><p>Для прогноза сначала оценим трафик, чек и выручку</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 -->
+<section id="about">
+  <div class="wrap">
+    <h2>Ключевые компетенции</h2>
+    <div class="about">
+      <div class="card photo"><img src="img/anna.webp" alt="Анна Трошина" loading="lazy" width="799" height="1000"><div><b>Анна Трошина</b><span>Эксперт по визуальной стратегии брендов FMCG и дизайну упаковки</span></div></div>
+      <div class="grid">
+        <div class="card list"><h3>Чем могу быть полезна</h3><ul>
+          <li>Визуальная стратегия и развитие бренда</li>
+          <li>Дизайн упаковки и продуктовых линеек</li>
+          <li>Оформление магазинов, навигация и реклама</li>
+          <li>3D-визуализация и подготовка к печати</li></ul></div>
+        <div class="card list"><h3>Как я работаю</h3><ul>
+          <li>Решения на основе опыта, анализа рынка и аудитории</li>
+          <li>Честная стоимость без агентских наценок</li>
+          <li>Надёжность, соблюдение сроков и договорённостей</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11–14 -->
+<section id="cases">
+  <div class="wrap">
+    <h2>Мои кейсы</h2>
+
+    <article class="card case reveal">
+      <div class="head"><span class="eyebrow">Кейс 1</span><h3>Редизайн классической линейки на 46 SKU крупного регионального завода</h3></div>
+      <p class="task"><b>Задача</b> была сохранить традиционную аудиторию и привлечь внимание к продукту молодёжной аудитории</p>
+      <div class="kpi"><div class="big">+29,1%</div><span>средняя динамика по отгрузкам за полугодие после редизайна</span></div>
+      <div class="gallery">
+        <img class="wide" src="img/case1-shelf.webp" alt="Полка с продукцией после редизайна" loading="lazy" width="1600" height="1436">
+        <img class="wide contain" src="img/case1-chart.webp" alt="График динамики отгрузок" loading="lazy" width="1600" height="872">
+      </div>
+    </article>
+
+    <article class="card case reveal">
+      <div class="head"><span class="eyebrow">Кейс 2</span><h3>Классический FMCG сейчас требует нового стиля фудзон</h3></div>
+      <div class="gallery duo">
+        <div class="bottles pink"><img src="img/case2-smorodina.webp" alt="Йогурт черная смородина-мята" loading="lazy" width="541" height="1600"><img src="img/case2-kofe.webp" alt="Йогурт кофе-кола" loading="lazy" width="510" height="1383"></div>
+        <img class="pink" src="img/case2-cups.webp" alt="Линейка йогуртов в стаканчиках" loading="lazy" width="1600" height="1038">
+      </div>
+    </article>
+
+    <article class="card case reveal">
+      <div class="head"><span class="eyebrow">Кейс 3</span><h3>Новые визуальные решения для молодёжных линеек</h3></div>
+      <div class="gallery">
+        <img class="wide" src="img/case3-novinka.webp" alt="Мягкий творог — новинка" loading="lazy" width="1600" height="1200">
+        <img src="img/case3-desserts.webp" alt="Творожные десерты" loading="lazy" width="1600" height="1028">
+        <img src="img/case3-shelf2.webp" alt="Продукция на полке" loading="lazy" width="1086" height="1448">
+        <img class="wide" src="img/case3-shelf.webp" alt="Продукция в магазине" loading="lazy" width="1200" height="1600" style="aspect-ratio:4/3">
+      </div>
+    </article>
+
+    <article class="card case reveal">
+      <div class="head"><span class="eyebrow">Кейс 4</span><h3>Дизайн и визуализация магазина для бренда молочных продуктов в историческом здании</h3></div>
+      <div class="gallery">
+        <img class="wide" src="img/case4-facade.webp" alt="Фасад исторического здания" loading="lazy" width="1600" height="712">
+        <img class="wide" src="img/case4-interior.webp" alt="Визуализация интерьера магазина" loading="lazy" width="1600" height="967">
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 15 -->
+<section id="meeting">
+  <div class="wrap">
+    <h2>Предлагаю онлайн-встречу, на которой обсудим текущие задачи бренда</h2>
+    <div class="cta">
+      <img src="img/meeting.webp" alt="Онлайн-встреча" loading="lazy" width="1451" height="1084">
+      <div class="card res">
+        <h3>Результат встречи</h3>
+        <p>Согласованный список реальных задач бизнеса</p>
+        <p>Приоритеты и предложение следующего этапа работы</p>
+        <div class="contacts" id="contacts"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© Анна Трошина · Экспертный разбор для JLC</footer>
+
+<script>
+  /* ===== КОНТАКТЫ: впишите нужные, пустые не показываются ===== */
+  const CONTACTS = {
+    telegram: "",   // например: "anna_troshina" (без @)
+    whatsapp: "79655423827",   // например: "77001234567" (только цифры)
+    phone:    "",   // например: "+7 700 123-45-67"
+    email:    ""    // например: "anna@example.com"
+  };
+  /* ============================================================ */
+
+  const items = [
+    "Рынок растёт быстрее наших продаж",
+    "Выручка растёт за счёт цен, но число покупок не растёт",
+    "Постоянные покупатели стареют, а молодых приходит мало",
+    "После открытия конкурента падают посещаемость и продажи",
+    "Покупатели легко заменяют наши товары аналогами",
+    "Для сохранения продаж нужно всё больше скидок",
+    "Новинки не увеличивают общую прибыль",
+    "Нас выбирают только из-за цены или близости",
+    "Оформление не привлекает новую аудиторию"
+  ];
+  const tick = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+  const box = document.getElementById("checks");
+  box.innerHTML = items.map((t,i)=>`<label class="card check"><input type="checkbox" id="c${i}"><span class="box">${tick}</span><span>${t}</span></label>`).join("");
+  const score = document.getElementById("score"), count = document.getElementById("count"), title = document.getElementById("scoreTitle");
+  box.addEventListener("change", () => {
+    const n = box.querySelectorAll("input:checked").length;
+    count.textContent = n;
+    score.classList.toggle("hot", n >= 3);
+    title.textContent = n >= 3 ? "Есть повод провести диагностику" : "Три и более — повод провести диагностику";
+  });
+
+  const c = document.getElementById("contacts"), links = [];
+  if (CONTACTS.telegram) links.push(`<a class="btn" href="https://t.me/${CONTACTS.telegram}" target="_blank" rel="noopener">Telegram</a>`);
+  if (CONTACTS.whatsapp) links.push(`<a class="btn" href="https://wa.me/${CONTACTS.whatsapp}" target="_blank" rel="noopener">Написать в WhatsApp</a>`);
+  if (CONTACTS.phone) links.push(`<a class="btn ghost" href="tel:${CONTACTS.phone.replace(/[^+\d]/g,"")}">${CONTACTS.phone}</a>`);
+  if (CONTACTS.email) links.push(`<a class="btn ghost" href="mailto:${CONTACTS.email}">${CONTACTS.email}</a>`);
+  c.innerHTML = links.join("");
+  if (!links.length) document.querySelector(".nav .btn").textContent = "Встреча";
+
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), {rootMargin:"0px 0px -8% 0px"});
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  } else document.querySelectorAll(".reveal").forEach(el => el.classList.add("in"));
+</script>
+</body>
+</html>
