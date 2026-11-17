@@ -108,8 +108,10 @@
   .dir li:before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:50%;background:var(--jlc-red)}
   figure{margin:0;position:relative}
   figure img{border-radius:6px;width:100%}
-  .tag{position:absolute;top:12px;left:12px;background:rgba(23,22,43,.75);color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:4px}
-  .tag.new{background:var(--jlc-red)}
+  figcaption{display:flex;align-items:center;gap:8px;margin-bottom:10px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  figcaption:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--soft)}
+  figcaption.new{color:var(--jlc-blue);font-size:15px}
+  figcaption.new:before{background:var(--jlc-blue)}
 
   .banner{padding:0;overflow:hidden;background:#fff}
   .banner .top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:clamp(28px,5vw,56px) var(--pad) 10px;max-width:1180px;margin:0 auto}
@@ -192,7 +194,7 @@
 <header class="nav">
   <div class="wrap">
     <img src="img/logo.webp" alt="JLC" width="1000" height="667">
-    <a class="btn sm" href="https://wa.me/79655423827" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn sm" href="https://wa.me/79655423827" target="_blank" rel="noopener">Написать в WhatsApp</a>
   </div>
 </header>
 
@@ -278,9 +280,9 @@
           <li>Сохранить аутентичность. Подчеркнуть происхождение и связь с Жетысу</li>
           <li>Создать образ местного бренда, которым хочется гордиться</li>
         </ul>
-        <figure class="reveal"><img src="img/store-before.webp" alt="Магазин JLC сейчас" loading="lazy" width="500" height="281"><span class="tag">Сейчас</span></figure>
+        <figure class="reveal"><figcaption>Сейчас</figcaption><img src="img/store-before.webp" alt="Магазин JLC сейчас" loading="lazy" width="500" height="281"></figure>
       </div>
-      <figure class="reveal"><img src="img/store-after.webp" alt="Магазин JLC: новое направление" loading="lazy" width="1600" height="900"><span class="tag new">Направление</span></figure>
+      <figure class="reveal"><figcaption class="new">Направление развития</figcaption><img src="img/store-after.webp" alt="Магазин JLC: новое направление" loading="lazy" width="1600" height="900"></figure>
     </div>
   </div>
 </section>
